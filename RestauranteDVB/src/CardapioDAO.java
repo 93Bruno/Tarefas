@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CardapioDAO {
+	
 	public void incluir(CardapioTO to) {
 		String sqlInsert = "INSERT INTO cliente(idProduto, nomeProduto, descProduto,valorProduto,dispProduto ) VALUES (?, ?, ?, ?, ?)";
 		try (Connection conn = ConnectionFactory.obtemConexao();
